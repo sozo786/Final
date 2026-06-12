@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   google_fonts: ^6.1.0
   flutter_animate: ^4.5.0
+  dependency_overrides:
+  meta: 1.11.0
 
 flutter:
   uses-material-design: true
