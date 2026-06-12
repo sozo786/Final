@@ -1,0 +1,16 @@
+name: sozodio_binary_pro
+description: Binary Calculator & Converter by Sozodio
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.5.0
+
+flutter:
+  uses-material-design: true
