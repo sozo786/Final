@@ -1,13 +1,14 @@
 workflows:
-  default:
-    name: Android APK
-    instance_type: mac_mini_m1
+  android-free:
+    name: Android APK Build
+    max_build_duration: 60
     environment:
-      flutter: stable
+      flutter: 3.13.9
+      java: 11
     scripts:
       - name: Get dependencies
         script: flutter pub get
-      - name: Build APK
-        script: flutter build apk --release
+      - name: Build debug APK
+        script: flutter build apk --debug
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/flutter-apk/app-debug.apk
