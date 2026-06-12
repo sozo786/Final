@@ -1,14 +1,11 @@
 workflows:
   android-free:
     name: Android APK Build
-    max_build_duration: 60
     environment:
       flutter: 3.13.9
       java: 11
     scripts:
-      - name: Get dependencies
-        script: flutter pub get
-      - name: Build debug APK
-        script: flutter build apk --debug
+      - flutter pub get
+      - flutter build apk --debug
     artifacts:
       - build/app/outputs/flutter-apk/app-debug.apk
